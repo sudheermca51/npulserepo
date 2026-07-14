@@ -16,5 +16,17 @@ public class PayFeesTests {
 		String actualAmount = payFeesPage.getPaidAmount();
 		Assert.assertEquals(actualAmount, expectedAmount);
 	}
+	
+	@Test
+	public void validatePayFees1()
+	{
+		hPage.navigateToAModule("Pay Fees");
+		String expectedAmount = "100";
+		payFeesPage.enterAmount(expectedAmount);
+		payFeesPage.submitPayment();
+		payFeesPage.handleAlerts();
+		String actualAmount = payFeesPage.getPaidAmount();
+		Assert.assertEquals(actualAmount, expectedAmount);
+	}
 
 }

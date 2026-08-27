@@ -6,9 +6,7 @@ import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -76,7 +74,7 @@ public class ScheduleAppointment extends BaseClass {
 			hourSelect.selectByVisibleText("05");
 			Select minSelect = new Select(driver.findElement(By.xpath("//select[@name='minute']")));
 			minSelect.selectByVisibleText("30");
-			String uniqueReason = RandomUtil.randomString("To Meet Doctor");
+			String uniqueReason = AppLibrary.randomString("To Meet Doctor");
 			driver.findElement(By.name("reason")).sendKeys(uniqueReason);
 			String expReason = driver.findElement(By.name("reason")).getAttribute("value");
 			String expTime= hourSelect.getFirstSelectedOption().getText()+":"+minSelect.getFirstSelectedOption().getText();

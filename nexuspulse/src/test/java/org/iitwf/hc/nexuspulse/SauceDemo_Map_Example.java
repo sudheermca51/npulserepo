@@ -86,6 +86,7 @@ public class SauceDemo_Map_Example {
 
 	{
 		File f ;
+		String data[][] = null;
 		try 
 		{
 			f = new File(fName);
@@ -98,7 +99,7 @@ public class SauceDemo_Map_Example {
 			int cols = sheet.getRow(0).getPhysicalNumberOfCells();
 			System.out.println("Rows " + rows);
 			System.out.println("Cols " + cols);
-			String data[][] = new String[rows][cols];
+			data= new String[rows][cols];
 
 			for(int i=0;i<rows;i++)
 			{

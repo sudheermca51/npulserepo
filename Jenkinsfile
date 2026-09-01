@@ -1,13 +1,5 @@
 pipeline {
     agent any
-
-    parameters {
-    choice(
-        name: 'BRANCH',
-        choices: ['main', 'develop', 'release','std1_branch'],
-        description: 'Select the branch to test'
-    )
-}
     stages {
         stage('Nexus_HealthCheck') {
             steps {

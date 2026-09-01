@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-    choice(
+    string(
         name: 'BRANCH',
         defaultValue: 'main',
         description: 'Select the branch to test'

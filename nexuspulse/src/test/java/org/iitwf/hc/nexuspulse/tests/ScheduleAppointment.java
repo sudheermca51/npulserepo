@@ -1,8 +1,10 @@
-package org.iitwf.hc.nexuspulse;
+package org.iitwf.hc.nexuspulse.tests;
 
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import org.iitwf.hc.nexuspulse.AppLibrary;
+import org.iitwf.hc.nexuspulse.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

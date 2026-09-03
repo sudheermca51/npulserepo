@@ -1,5 +1,6 @@
-package org.iitwf.hc.nexuspulse;
+package org.iitwf.hc.nexuspulse.tests;
 
+import org.iitwf.hc.nexuspulse.BaseClass;
 import org.iitwf.nexuspulse.admin.pages.LoginPage;
 import org.iitwf.nexuspulse.admin.pages.PatientApprovalPage;
 import org.iitwf.nexuspulse.patient.pages.HomePage;

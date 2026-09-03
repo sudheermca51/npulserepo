@@ -1,4 +1,4 @@
-package org.iitwf.hc.nexuspulse;
+package org.iitwf.hc.nexuspulse.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

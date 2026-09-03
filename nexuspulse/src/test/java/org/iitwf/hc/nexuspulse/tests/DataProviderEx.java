@@ -1,4 +1,4 @@
-package org.iitwf.hc.nexuspulse;
+package org.iitwf.hc.nexuspulse.tests;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

@@ -3,15 +3,19 @@ package org.iitwf.hc.nexuspulse;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestListener;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
-public class BaseClass {
+public class BaseClass implements ITestListener {
 
 	protected WebDriver driver;
 	protected Properties prop;
 	String environment,browserType;
+	
+	
 	
 	@BeforeTest
 	public void loadProperties() throws IOException

@@ -1,6 +1,6 @@
 pipeline {
     agent any
-     parameters {
+    parameters {
     string(
         name: 'BRANCH',
         defaultValue: 'main',
@@ -15,7 +15,7 @@ pipeline {
         }
          stage('Download_Code_From_Github') {
             steps {
-                git branch: 'main', url: 'https://github.com/sudheermca51/npulserepo.git'
+                git branch: params.BRANCH, url: 'https://github.com/sudheermca51/npulserepo.git'
             }
         }
           stage('Execute_Selenium_Tests') {

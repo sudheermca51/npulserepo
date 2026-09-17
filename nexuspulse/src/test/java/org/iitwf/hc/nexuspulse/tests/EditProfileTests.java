@@ -6,6 +6,7 @@ import org.iitwf.nexuspulse.patient.pages.EditProfilePage;
 import org.iitwf.nexuspulse.patient.pages.HomePage;
 import org.iitwf.nexuspulse.patient.pages.LoginPage;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -36,6 +37,7 @@ public class EditProfileTests extends BaseClass {
 		profilePage.submitProfile();
 		profilePage.handleAlerts();
 		String actualFName = profilePage.getFirstName();
+		Reporter.log("Actual Name:::<font color=\"red\">"+actualFName+"</font>");
 		Assert.assertEquals(actualFName, expectedFName);
 	}
 	@Test

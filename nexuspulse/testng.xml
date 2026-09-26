@@ -1,11 +1,17 @@
 <suite name="Suite">
-<listeners>
-  <listener class-name="org.iitwf.hc.nexuspulse.TestListener"/>
-</listeners>
 
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="org.iitwf.hc.nexuspulse.tests.EditProfileTests"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+    <listeners>
+        <listener class-name="org.iitwf.hc.nexuspulse.TestListener"/>
+    </listeners>
+
+    <test thread-count="5" name="Pay Fees Test">
+
+        <classes>
+
+            <class name="org.iitwf.hc.nexuspulse.tests.PayFeesTests"/>
+
+        </classes>
+
+    </test>
+
+</suite>

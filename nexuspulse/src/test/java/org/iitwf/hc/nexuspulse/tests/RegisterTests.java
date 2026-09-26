@@ -15,12 +15,7 @@ public class RegisterTests extends BaseClass{
 		RegisterPage rPage = lPage.register();
 		String actual = rPage.registerPatient();
 		System.out.println("Actual::: " + actual);
-		//Login with the same creds using during register 
-		//validate the message
-		//navigate to admin 
-		//login to admin
-		//appprove
-		//login to patient module
+		
 		
 	}
 }

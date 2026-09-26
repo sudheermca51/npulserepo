@@ -7,6 +7,7 @@
     <classes>
       <class name="org.iitwf.hc.nexuspulse.tests.EditProfileTests"/>
       <class name="org.iitwf.hc.nexuspulse.tests.TestMessages"/>
+      <class name="org.iitwf.hc.nexuspulse.tests.RegisterTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

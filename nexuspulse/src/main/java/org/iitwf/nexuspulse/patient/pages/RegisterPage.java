@@ -20,6 +20,7 @@ public class RegisterPage {
 	public RegisterPage(WebDriver driver)
 	{
 		this.driver = driver;
+	
 	}
 
 	public String registerPatient()

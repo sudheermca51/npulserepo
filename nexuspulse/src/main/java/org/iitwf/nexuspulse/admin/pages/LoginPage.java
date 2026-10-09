@@ -17,4 +17,8 @@ public class LoginPage {
 		driver.findElement(By.name("password")).sendKeys(pWord);
 		driver.findElement(By.xpath("//button[@class='btn-primary']")).click();
 	}
+	
+	public void navigateSidebarMenu(String menuName) {
+		driver.findElement(By.xpath("//span[text()='"+menuName+"']")).click();
+	}
 }
